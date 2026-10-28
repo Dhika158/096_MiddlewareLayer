@@ -29,5 +29,7 @@ app.use((req, res, next) => {
             status: res.statusCode,
             duration: `${duration}ms`,
         })
-    }
-        })
+    })
+
+    next()
+})

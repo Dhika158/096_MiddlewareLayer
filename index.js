@@ -12,4 +12,6 @@ const pool = new Pool({
     database: 'mahasiswa',
     password: 'Yogyakarta4321',
     port: 5432,
-}
+})
+
+app.use(express.json())
